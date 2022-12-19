@@ -1,4 +1,9 @@
-# Advent of Code
+# Run times
 
-This is a monorepo for all my advent of code solutions;
-each branch is named after its year.
+Approximate execution times of the hardest problems, compiled with `raco exe`.
+
+| Day | Time (s) |
+|-----|----------|
+| 15  | 3.81     |
+| 16  | 20.6     |
+| 19  | 75.7     |
