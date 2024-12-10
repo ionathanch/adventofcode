@@ -6,7 +6,7 @@
 
 Now located in this repository's wiki.
 
-* [Day 11: Chronal Charge](https://github.com/ionathanch/adventofcode/wiki/Day-11%3A-Chronal-Charge)
+* [Day 11: Chronal Charge](https://github.com/ionathanch/adventofcode/wiki/2018-Day-11%3A-Chronal-Charge)
 
 ## Runtimes
 
