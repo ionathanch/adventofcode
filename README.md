@@ -2,11 +2,11 @@
 
 ## Blog Posts
 
-~To arrive at [⟨ortho|normal⟩](https://hilb.ert.space) as December comes.~
+~To arrive at [⟨ortho|normal⟩](https://ionathan.ch) as December comes.~
 
 Now located in this repository's wiki.
 
-* [Day 11: Chronal Charge](https://github.com/ionathanch/adventofcode-2018/wiki/Day-11%3A-Chronal-Charge)
+* [Day 11: Chronal Charge](https://github.com/ionathanch/adventofcode/wiki/Day-11%3A-Chronal-Charge)
 
 ## Runtimes
 
