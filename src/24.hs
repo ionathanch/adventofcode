@@ -28,6 +28,6 @@ estBridge est port components =
 
 main :: IO ()
 main = do
-    components <- fromList . map (\line -> let a : b : [] = splitOn "/" line in (read a, read b)) . lines <$> readFile "24.txt"
+    components <- fromList . map (\line -> let a : b : [] = splitOn "/" line in (read a, read b)) . lines <$> readFile "../input/24.txt"
     print $ bridgeStrength $ estBridge strongest 0 components
     print $ bridgeStrength $ estBridge longest   0 components

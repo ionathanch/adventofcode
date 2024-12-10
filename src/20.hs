@@ -48,7 +48,7 @@ parseLine str =
 
 main :: IO ()
 main = do
-    particles <- map parseLine . lines <$> readFile "20.txt"
+    particles <- map parseLine . lines <$> readFile "../input/20.txt"
     let distances = map (norm . position . updateParticle 400) particles
     print $ elemIndex (minimum distances) distances
     print $ length $ iterate stepParticles particles !! 40

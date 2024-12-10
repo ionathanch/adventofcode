@@ -28,7 +28,7 @@ traverseGrid letters grid state = traverseGrid letters grid $ nextState letters 
 
 main :: IO ()
 main = do
-    input <- readFile "19.txt"
+    input <- readFile "../input/19.txt"
     let rows = lines input
         Just start = (+1) <$> (elemIndex '|' $ head rows)
         letters = filter (not . (`elem` " +|-\n")) input

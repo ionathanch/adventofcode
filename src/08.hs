@@ -38,6 +38,6 @@ executeInstruction m (I r v s f) =
 
 main :: IO ()
 main = do
-    maxima <- map (maximum . elems) . tail . scanl executeInstruction empty . map parseLine . lines <$> readFile "08.txt"
+    maxima <- map (maximum . elems) . tail . scanl executeInstruction empty . map parseLine . lines <$> readFile "../input/08.txt"
     print $ last maxima
     print $ maximum maxima

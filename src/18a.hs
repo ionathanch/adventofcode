@@ -66,6 +66,6 @@ recover instructions (reg, pos, freq, rec) =
 
 main :: IO ()
 main = do
-    instructions <- fromList . map parseLine . lines <$> readFile "18.txt"
+    instructions <- fromList . map parseLine . lines <$> readFile "../input/18.txt"
     let initialState = (V.replicate 5 0, 0, 0, 0)
     print $ recover instructions initialState

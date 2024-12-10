@@ -55,7 +55,7 @@ parseLine line =
 
 main :: IO ()
 main = do
-    rules <- foldr parseLine empty . lines <$> readFile "21.txt"
+    rules <- foldr parseLine empty . lines <$> readFile "../input/21.txt"
     let iterations = map (length . filter (=='#')) $ iterate (enhance rules) ".#...####"
     print $ iterations !! 5
     print $ iterations !! 18

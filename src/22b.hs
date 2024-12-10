@@ -38,5 +38,5 @@ parseRow (y, xs) grid = foldr (\(x, c) currGrid -> insert (x, y) (charToEnum c) 
 
 main :: IO ()
 main = do
-    grid <- foldr parseRow empty . zip [-12..12] . map (zip [-12..12]) . lines <$> readFile "22.txt"
+    grid <- foldr parseRow empty . zip [-12..12] . map (zip [-12..12]) . lines <$> readFile "../input/22.txt"
     print $ stricterate 10000000 (grid, (0, 0), North, 0)

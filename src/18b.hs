@@ -123,6 +123,6 @@ getCount instructions state =
 
 main :: IO ()
 main = do
-    instructions <- fromList . map parseLine . lines <$> readFile "18.txt"
+    instructions <- fromList . map parseLine . lines <$> readFile "../input/18.txt"
     let initialState = (State (Program (V.replicate 5 0) 0 empty) (Program (V.replicate 5 0 // [(4, 1)]) 0 empty) (False, False) 0)
     print $ getCount instructions initialState

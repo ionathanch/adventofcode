@@ -65,6 +65,6 @@ count =
 
 main :: IO ()
 main = do
-    instructions <- fromList . map parseLine . lines <$> readFile "23.txt"
+    instructions <- fromList . map parseLine . lines <$> readFile "../input/23.txt"
     print $ runInstructions instructions (State (V.replicate 8 0) 0 0)
     print $ count

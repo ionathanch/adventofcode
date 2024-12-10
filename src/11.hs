@@ -23,6 +23,6 @@ getDistance (Coordinates x y z) =
 
 main :: IO ()
 main = do
-    coordinates <- map getCoordinates . splitOn "," <$> readFile "11.txt"
+    coordinates <- map getCoordinates . splitOn "," <$> readFile "../input/11.txt"
     print $ getDistance $ fold coordinates
     print $ maximum . map getDistance . scanl mappend mempty $ coordinates

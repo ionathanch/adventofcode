@@ -15,6 +15,6 @@ getExitSteps f (steps, i, jumps) =
 
 main :: IO ()
 main = do
-    jumpsList <- fmap (fromList . map read . lines) $ readFile "5.txt"
+    jumpsList <- fmap (fromList . map read . lines) $ readFile "../input/5.txt"
     print $ getExitSteps (+1)                                    (0, 0, jumpsList)
     print $ getExitSteps (\v -> if v >= 3 then v - 1 else v + 1) (0, 0, jumpsList)

@@ -30,6 +30,6 @@ parseRow (y, xs) grid = foldr (\(x, c) currGrid -> insert (x, y) c currGrid) gri
 
 main :: IO ()
 main = do
-    grid <- foldr parseRow empty . zip [-12..12] . map (zip [-12..12]) . lines <$> readFile "22.txt"
+    grid <- foldr parseRow empty . zip [-12..12] . map (zip [-12..12]) . lines <$> readFile "../input/22.txt"
     let (_, _, _, count) = iterate nextState (grid, (0, 0), North, 0) !! 10000
     print $ count

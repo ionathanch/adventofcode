@@ -20,7 +20,7 @@ hash lengths state = foldl twist state lengths
 
 main :: IO ()
 main = do
-    input <- readFile "10.txt"
+    input <- readFile "../input/10.txt"
     let lengths    = map read $ splitOn "," input
         newLengths = map ord input ++ [17, 31, 73, 47, 23]
         (hashed,     _, _) =          hash lengths     ([0..255], 0, 0)

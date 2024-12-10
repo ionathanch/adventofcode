@@ -15,7 +15,7 @@ getExitSteps len f state@(!steps, i, _) =
 
 main :: IO ()
 main = do
-    jumpsList <- map read . lines <$> readFile "05.txt"
+    jumpsList <- map read . lines <$> readFile "../input/05.txt"
     let jumpsMap  = fromList $ zip [0..] jumpsList
     print $ getExitSteps (length jumpsList) (+1)                                    (0, 0, jumpsMap)
     print $ getExitSteps (length jumpsList) (\v -> if v >= 3 then v - 1 else v + 1) (0, 0, jumpsMap)

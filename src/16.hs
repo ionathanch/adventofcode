@@ -42,7 +42,7 @@ applyDance (s, positions, swaps) str =
 
 main :: IO ()
 main = do
-    moves <- map parseMove . splitOn "," <$> readFile "16.txt"
+    moves <- map parseMove . splitOn "," <$> readFile "../input/16.txt"
     let ip = [0..15]; ap = ['a'..'p']
         state  = dance moves (0, fromList $ zip ip ip, fromList $ zip ap ap)
         dances = iterate (applyDance state) ap
